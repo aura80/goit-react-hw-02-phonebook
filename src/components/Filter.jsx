@@ -4,7 +4,12 @@ const Filter = ({ value, onChange }) => (
   <div>
     <label>
       Find contacts by Name
-      <input type="text" value={value} onChange={e => onChange(e.target.value)} className="" />
+      <input
+        type="text"
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        style={{  marginLeft: '10px' }}
+      />
     </label>
   </div>
 );
